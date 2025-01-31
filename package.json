@@ -1,0 +1,33 @@
+{
+  "name": "price_flow",
+  "version": "1.0.1",
+  "description": "An API for real-time and historical financial market data",
+  "main": "server.js",
+  "scripts": {
+    "dev": "node server.js",
+    "start": "nodemon server.js"
+  },
+  "keywords": [
+    "API",
+    "finance",
+    "crypto",
+    "gold",
+    "forex",
+    "real-time",
+    "market"
+  ],
+  "author": "mohammad alamzadeh",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^1.7.9",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "http-errors": "^2.0.0",
+    "mongoose": "^8.9.5",
+    "morgan": "^1.10.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.9"
+  }
+}
