@@ -27,15 +27,6 @@ async function uniqueSlug() {
   return string;
 }
 
-async function deleteFilePublic(files) {
-  const file = files?.map((file) => file.path);
-  if (file) {
-    file.forEach((image) => {
-      if (fs.existsSync(image)) fs.unlinkSync(image);
-    });
-  }
-}
-
 function isValidMongoId(id) {
   if (!mongoose.Types.ObjectId.isValid(id))
     throw createError.BadRequest("ایدی ارسال شده صحیح نیمباشد");
@@ -49,7 +40,6 @@ async function comparePass(password, hash) {
 module.exports = {
   jwtSign,
   uniqueSlug,
-  deleteFilePublic,
   isValidMongoId,
   comparePass,
 };
